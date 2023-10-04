@@ -4,66 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Joke Generator</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(45deg, #fbff21, #ffd000);
-        }
-        .innerbody{
-            position: relative;
-            width: 500px;
-            height: 600px;
-            padding: 50px 40px;
-            background: #000000d0;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
-        }
-        .innerbody span{
-            display: block;
-            text-align: center;
-            font-size: 100px;
-
-        }
-         p{
-            font-size: 16px;
-            color: #fff;
-            text-align: center;
-            font-weight: 400;
-            word-wrap: break-word;
-            line-height: 35px;
-            margin: 35px 0;
-            opacity: 0;
-        }
-        button{
-            display: block;
-            background-color: #ffd000;
-            border: none;
-            padding: 12px 25px;
-            font-size: 18px;
-            color: #171721;
-            font-weight: 600;
-            margin-top: 25px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .fade{
-            opacity: 1;
-            transition: opacity 1.5s;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="innerbody">
@@ -72,24 +13,6 @@
         <button class="btn">Get Randon Joke</button>
     </div>
 
-    <script>
-        const joke=document.querySelector(".joke");
-        const btn=document.querySelector(".btn");
-        const url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
-        let getjoke=()=>{
-            joke.classList.remove("fade");
-
-            fetch(url)
-            .then(data=> data.json())
-            .then(item=>{
-                joke.innerHTML=`${item.joke}`;
-                joke.classList.add("fade");
-            });
-        }
-
-        btn.addEventListener("click",getjoke);
-        getjoke();
-
-    </script>
+    <script src="/script.js"></script>
 </body>
 </html>
