@@ -1,58 +1,57 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(45deg, #fbff21, #ffd000);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #fbff21, #ffd000);
 }
-.innerbody{
-    position: relative;
-    width: 500px;
-    height: 600px;
-    padding: 50px 40px;
-    background: #000000d0;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+.innerbody {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  padding: 50px 40px;
+  background: #000000d0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
 }
-.innerbody span{
-    display: block;
-    text-align: center;
-    font-size: 100px;
-
+.innerbody span {
+  display: block;
+  text-align: center;
+  font-size: 100px;
 }
- p{
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    word-wrap: break-word;
-    line-height: 35px;
-    margin: 35px 0;
-    opacity: 0;
+p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  word-wrap: break-word;
+  line-height: 35px;
+  margin: 35px 0;
+  opacity: 0;
 }
-button{
-    display: block;
-    background-color: #ffd000;
-    border: none;
-    padding: 12px 25px;
-    font-size: 18px;
-    color: #171721;
-    font-weight: 600;
-    margin-top: 25px;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+  display: block;
+  background-color: #ffd000;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #171721;
+  font-weight: 600;
+  margin-top: 25px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.fade{
-    opacity: 1;
-    transition: opacity 1.5s;
+.fade {
+  opacity: 1;
+  transition: opacity 1.5s;
 }
