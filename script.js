@@ -12,6 +12,5 @@ let getjoke = () => {
       joke.classList.add("fade");
     });
 };
-
 btn.addEventListener("click", getjoke);
 getjoke();
